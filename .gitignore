@@ -1,0 +1,105 @@
+# Logs
+logs
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# User-specific files
+.npmrc
+.npmignore
+.npmrc.yaml
+.npmrc.json
+.npmrc.json5
+.npmrc.cson
+.npmrc.toml
+.npmrc.yml
+.npmrc.sh
+.npmrc.cmd
+.npmrc.ps1
+.npmrc.sh
+
+# Debugging
+.vscode
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+*.suo
+*.ntvs_analysis
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build files
+dist/
+build/
+out/
+
+# Dependency directories
+jspm_packages/
+typings/
+
+# Visual Studio project files
+*.csproj
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# WebStorm
+.idea
+
+# Testing
+coverage/
+
+# Yarn
+.yarn/
+.yarn-integrity/
+.pnp.*
+!**/yarn.lock
+
+# parcel-bundler
+.cache/
+
+# Optionally, you can add your OS-specific files to be ignored
+# For example, macOS:
+# .DS_Store
+
+# Optionally, exclude environment-specific files
+# .env
+# .env.local
+# .env.development
+# .env.test
+# .env.production
+
+# Ignore log files and other generated files
+logs/
+*.log
+npm-debug.log*
+
+# For Node.js projects using Yarn
+# yarn-error.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node-waf configuration files
+.lock-wscript
+
+# Compiled binary addons (for Node.js native addons)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Typescript v1 declaration files
+typings/
+
+# Optional: If you're using a package manager like npm or yarn, you might want to exclude your lock file(s)
+# package-lock.json
+# yarn.lock
