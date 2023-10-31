@@ -2,10 +2,10 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "lib": [
-      "es2020"
+      "ESNext"
     ],
-    "module": "es2020",
-    "target": "es2020",
+    "module": "ESNext",
+    "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

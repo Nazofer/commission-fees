@@ -6,7 +6,7 @@ import { UserTypes } from '../enums/users.enum.ts';
 import { WEEK_IN_MILISECS } from '../constants/dates.ts';
 import { printError, printSuccess } from './logger.service.ts';
 
-const getCommissionFeeForCashIn = (operation: Operation): number => {
+export const getCommissionFeeForCashIn = (operation: Operation): number => {
   const { amount, currency } = operation.operation;
   const { percents } = CASH_CONSTANTS.cash_in;
 
@@ -22,7 +22,9 @@ const getCommissionFeeForCashIn = (operation: Operation): number => {
   return fee > maxFee ? maxFee : fee;
 };
 
-const getCommissionFeeForCashOutNatural = (operation: Operation): number => {
+export const getCommissionFeeForCashOutNatural = (
+  operation: Operation
+): number => {
   const { amount, currency } = operation.operation;
   const rule = CASH_CONSTANTS.cash_out.natural;
 
@@ -73,7 +75,9 @@ const getCommissionFeeForCashOutNatural = (operation: Operation): number => {
   throw new Error('No rule found');
 };
 
-const getCommissionFeeForCashOutJuridical = (operation: Operation): number => {
+export const getCommissionFeeForCashOutJuridical = (
+  operation: Operation
+): number => {
   const { amount, currency } = operation.operation;
   const { percents } = CASH_CONSTANTS.cash_out[operation.user_type];
   const rule = CASH_CONSTANTS.cash_out[operation.user_type];
@@ -92,7 +96,7 @@ const getCommissionFeeForCashOutJuridical = (operation: Operation): number => {
   throw new Error('No rule found');
 };
 
-const getCommissionFeeForCashOut = (operation: Operation): number => {
+export const getCommissionFeeForCashOut = (operation: Operation): number => {
   const { user_type } = operation;
 
   switch (user_type) {

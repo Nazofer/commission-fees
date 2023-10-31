@@ -1,4 +1,4 @@
-export enum UserTypes {
+export const enum UserTypes {
   NATURAL = 'natural',
   JURIDICAL = 'juridical',
 }
